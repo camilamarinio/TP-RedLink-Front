@@ -1,0 +1,14 @@
+.product  {
+  background-color: #FAFCFF;
+ }
+
+ .bienvenido{
+   color: #1566C6;
+   position: absolute;
+   position: absolute;
+   width: 484px;
+   height: 213px;
+   left: calc(50% - 484px/2 + 28px);
+   top: calc(50% - 213px/2 + 95.5px);
+ }
+

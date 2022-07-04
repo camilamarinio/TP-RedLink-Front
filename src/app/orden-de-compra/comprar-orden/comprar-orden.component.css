@@ -1,0 +1,25 @@
+.button2{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.container {
+  max-width: 960px;
+  margin-top: 30px;
+}
+
+.button3{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.button{
+  background-color: #1566C6;
+}
+

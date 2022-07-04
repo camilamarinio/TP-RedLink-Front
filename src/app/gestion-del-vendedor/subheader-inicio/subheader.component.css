@@ -1,0 +1,11 @@
+.button{
+  background-color: black;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.subheader{
+  background-color:black;
+}

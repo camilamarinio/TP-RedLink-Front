@@ -1,0 +1,22 @@
+.button2{
+  background-color: black;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.th{
+  width: 20%;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+

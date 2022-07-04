@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F2F8FF;
+
+}
+
+
+.form-signin {
+
+ width: 320px;
+  height: 450px;
+  background: #FAFCFF;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(21, 102, 98);
+  b
+
+
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+  font-size: small;
+
+}
+
+
+.form-signin input[type="email"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; 
+  background-color: #FAFCFF;;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 8px;
+   height: 55px;
+  width: 270px;
+
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #FAFCFF;
+  font-size: 18px;
+  border-radius: 8px;
+  height: 55px;
+  width: 270px;
+
+
+}
+
+.form-signin button[type="submit"]{
+  background-color: #1566C6;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 8px;
+  height: 50px;
+  width: 200px
+
+}
+

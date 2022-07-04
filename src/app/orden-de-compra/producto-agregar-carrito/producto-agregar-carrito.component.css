@@ -1,0 +1,17 @@
+.pointer{
+  cursor: pointer;
+  align-items: center !important;
+  color: black;
+}
+.fw-bolder{
+  font-size: 20px !important;
+}
+
+.cantidadProdu{
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.button4{
+  margin-left: 35px;
+}

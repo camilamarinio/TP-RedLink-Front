@@ -1,0 +1,30 @@
+/*header {
+  background-color: #1566C6 ;
+   width: 100%;
+  height: 55px;
+}
+
+a {
+  background-color: #1566C6;
+  color : #F2F8FF;
+}
+
+.header{
+  background-color: #1566C6 ;
+  color: white;
+
+
+}
+
+.button{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}*/
+
+.navbar-toggler{
+text-align: right !important;
+}

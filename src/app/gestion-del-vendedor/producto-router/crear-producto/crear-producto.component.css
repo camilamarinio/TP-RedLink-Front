@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 40%;
+}
+.button2{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.col{
+  width: 70px;
+  height: 30px;
+  margin: 10%;
+}

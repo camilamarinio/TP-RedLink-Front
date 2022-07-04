@@ -1,0 +1,12 @@
+footer {
+  text-align:center;
+  background-color: #000;
+
+  bottom: 0;
+  width: 100%;
+
+}
+
+.text-muted{
+  color: white!important;
+}

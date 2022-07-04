@@ -1,0 +1,36 @@
+html,
+
+body {
+  text-align: center;
+  background-color: #F2F8FF;
+ 
+}
+
+main > .container {
+  padding: 60px 15px 0;
+  background-color: #F2F8FF;
+
+}
+
+footer {
+  text-align:center;
+  background-color: #1566C6;
+}
+
+.text-muted{
+  color: #F2F8FF!important;
+}
+
+header {
+  background-color: #1566C6 ;
+   width: 100%;
+  height: 55px;
+}
+
+a {
+    background-color: #1566C6;
+    color : #F2F8FF;
+
+
+
+

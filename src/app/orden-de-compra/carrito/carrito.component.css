@@ -1,0 +1,49 @@
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.th{
+  width: 20%;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.button{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.button2{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.pointer{
+  cursor: pointer;
+}
+.button3{
+  background-color: #1566C6;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  width: 40% !important;
+}
+
+.boton{
+  align-items: center;
+  text-align: center;
+}
+

@@ -1,0 +1,82 @@
+<div class="container">
+  <mat-toolbar>
+  <span>Crear Producto</span>
+  <span class="example-spacer"></span>
+  <button mat-button class = "button2" routerLink="/gestionDelVendedor/productos">volver</button>
+</mat-toolbar>
+
+
+ <!--<mat-card style="margin-top:10px ">
+
+ <form [formGroup]="form" (ngSubmit)="agregarProducto()">
+    <mat-grid-list cols="4" rowHeight="70px">
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+          <input class="col form-control form-control-sm"formControlName="nombre" type="text" placeholder="Nombre" aria-label=".form-control-sm example">
+      </mat-grid-tile>
+
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1" >
+
+        <input class="col form-control form-control-sm" type="text" placeholder="Precio" aria-label=".form-control-sm example">
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+
+        <input class="col form-control form-control-sm" type="text" placeholder="Stock" aria-label=".form-control-sm example">
+      </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+      <button  type = "submit" [disabled]="form.invalid" mat-raised-button class="button  btn btn-lg btn-primary ">Aceptar</button>
+    </mat-grid-tile>
+
+    </mat-grid-list>
+    </form>
+    </mat-card>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Input</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    </div>-->
+
+
+  <mat-card style="margin-top:10px ">
+  <form [formGroup]="form" (ngSubmit)="agregarProducto()">
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <label >nombre</label>
+      <input matInput formControlName="nombre">
+  </mat-grid-tile>
+
+
+  <mat-grid-tile [colspan]="1" [rowspan]="1" >
+    <mat-label>precio</mat-label>
+      <input matInput formControlName="precio">
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="1" [rowspan]="1">
+    <mat-label>stock</mat-label>
+    <input matInput formControlName="stock">
+  </mat-grid-tile>
+
+
+<mat-grid-tile [colspan]="1" [rowspan]="1">
+  <button  type = "submit" [disabled]="form.invalid" mat-raised-button class="button  btn btn-lg btn-primary ">Aceptar</button>
+</mat-grid-tile>
+
+</mat-grid-list>
+</form>
+</mat-card>
+
+<!--<mat-form-field appearance="fill">
+  <mat-label>Input</mat-label>
+  <input matInput>
+</mat-form-field>-->
+
+</div>
+
+
+
