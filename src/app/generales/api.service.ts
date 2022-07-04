@@ -37,4 +37,9 @@ private url: string = environment.apiRestURL;
   public agregarItem(item: any){
     return this.http.post(this.url + '/items',item);
   }
+
+  public agregarItemsALaOrden(item: any){
+    return this.http.post(this.url + '/ordenDeCompra', item);
+
+  }
 }

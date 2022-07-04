@@ -23,6 +23,8 @@ export class ComprarOrdenComponent implements OnInit {
 
 
 
+
+
   ngOnInit(): void {
     this.cargarProductos();
     this.visibilidadFooterService.hacerVisibleElFooter();
