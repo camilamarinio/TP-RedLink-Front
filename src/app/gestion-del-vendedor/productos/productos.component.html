@@ -4,21 +4,21 @@
           <div class="col mb-5">
               <div class="card h-100">
                   <!-- Product image-->
-                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                  <img class="card-img-top" src={{productoData?.imagen}} alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                       <div class="text-center">
                           <!-- Product name-->
-                          <h5 class="fw-bolder">{{producto?.nombre}}</h5>
+                          <h5 class="fw-bolder">{{productoData?.nombre}}</h5>
                           <!-- Product price-->
-                          ${{producto?.precio}} - $80.00
+                          ${{productoData?.precio}} - USD
                       </div>
                   </div>
                   <!-- Product actions-->
 
                   <button class="button2 btn btn-outline-dark mt-auto" type="submit" >Editar</button>
 
-                   <button class="button2 btn btn-outline-dark mt-auto" type="submit" (click)="eliminarProducto(producto!)">Eliminar</button>
+                   <button class="button2 btn btn-outline-dark mt-auto" type="submit" (click)="eliminarProducto(productoData!)">Eliminar</button>
 
 
 

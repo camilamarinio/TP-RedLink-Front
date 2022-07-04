@@ -1,3 +1,4 @@
+import { ApiService } from './../../../generales/api.service';
 import { ProductoService } from './../producto.service';
 import { VisibilidadHeaderService } from '../../../generales/header/visibilidad/visibilidad-header.service';
 
@@ -16,17 +17,18 @@ export class CrearProductoComponent implements OnInit {
   form: FormGroup
   constructor(
     private fb: FormBuilder,
-    private productoService: ProductoService,
     private visibilidadFooterService:VisibilidadFooterService,
     private visibilidadHeaderService: VisibilidadHeaderService,
-    private _snackBar: MatSnackBar
+    private _snackBar: MatSnackBar,
+    private apiRest: ApiService
   ) {
     this.form = this.fb.group({
       nombre: ['', Validators.required],
       precio: ['', Validators.required],
       stock: ['', Validators.required],
+      imagen:['', Validators.required],
+      descripcion:['', Validators.required],
     }
-
 
     )
   }
@@ -37,10 +39,18 @@ export class CrearProductoComponent implements OnInit {
       precio: this.form.value.precio,
       stock: this.form.value.stock
     }
+    this.cargarroducto(producto);
 
-
-    this.productoService.agregarProducto(producto);
     this.confirmacionProducto();
+
+
+  }
+
+  cargarroducto(producto: any){
+    this.apiRest.agregarProducto(producto).subscribe(respuesta =>
+      {
+      console.log(respuesta);
+    });
   }
 
   confirmacionProducto(){

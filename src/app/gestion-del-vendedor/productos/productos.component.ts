@@ -8,17 +8,17 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   selector: 'app-productos',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class ProductosComponent implements OnInit {
 
-  @Input() producto: Producto|null;
+  @Input() productoData: any;
 
   constructor(
    private productoService: ProductoService,
    private _snackBar: MatSnackBar
   ) {
-    this.producto=null;
+    this.productoData=null;
   }
 
   eliminarProducto(producto: Producto){

@@ -29,4 +29,12 @@ private url: string = environment.apiRestURL;
   public unUsuario(nombre: string ){
     return this.http.get(`${this.url + '/usuarios'}/${nombre}/agregar`);
   }
+
+  public agregarProducto(producto: any){
+    return this.http.post(this.url + '/productos',producto);
+  }
+
+  public agregarItem(item: any){
+    return this.http.post(this.url + '/items',item);
+  }
 }

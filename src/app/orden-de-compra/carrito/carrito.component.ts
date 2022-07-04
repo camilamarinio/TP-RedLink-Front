@@ -41,11 +41,15 @@ export class CarritoComponent implements OnInit {
   }
 
 
+
+
   ngOnInit(): void {
     this.cargarCarrito();
     this.visibilidadFooterService.hacerVisibleElFooter();
     this.visibilidadHeaderService.hacerVisibleElHeader();
 
   }
+
+
 
 }

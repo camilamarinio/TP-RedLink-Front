@@ -13,11 +13,10 @@ import { ChangeDetectionStrategy, Component, Input, OnInit, ViewChild } from '@a
   selector: 'app-listado-productos',
   templateUrl: './listado-productos.component.html',
   styleUrls: ['./listado-productos.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class ListadoProductosComponent implements OnInit {
-  //listProductos:Producto[] = [];
-  //displayedColumns: string[] = ['id','nombre','precio','stock','acciones'];
+
   dataSource!: MatTableDataSource<any>;
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -33,7 +32,9 @@ export class ListadoProductosComponent implements OnInit {
   }
 
   cargarProductos(){
-    this.productos = this.productoService.getProductos();
+    this.apiService.getProductos().subscribe((producto:any)=>{
+      this.productos = producto._embedded.productoes;
+    });
     this.dataSource = new MatTableDataSource(this.productos);
   }
 
