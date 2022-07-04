@@ -25,10 +25,24 @@ export class ProductoAgregarCarritoComponent implements OnInit {
 
   }
 
-  agregarAlCarrito(producto: Producto){
+  agregarAlCarrito(producto: Producto , cantidad: number){
     this.productoService.agregarAlCarrito(producto);
+
+    this.cargarItem(producto,cantidad);
+
     this.confirmacionProducto();
 
+  }
+
+  cargarItem(producto: any, cantidad: number){
+    const item: any ={
+      producto: producto,
+      cantidad: cantidad
+    }
+    this.apiProductos.agregarItem(item).subscribe(respuesta =>
+      {
+      console.log(respuesta);
+    });
   }
 
   confirmacionProducto(){

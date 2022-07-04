@@ -39,14 +39,14 @@ export class CrearProductoComponent implements OnInit {
       precio: this.form.value.precio,
       stock: this.form.value.stock
     }
-    this.cargarroducto(producto);
+    this.cargarProducto(producto);
 
     this.confirmacionProducto();
 
 
   }
 
-  cargarroducto(producto: any){
+  cargarProducto(producto: any){
     this.apiRest.agregarProducto(producto).subscribe(respuesta =>
       {
       console.log(respuesta);
